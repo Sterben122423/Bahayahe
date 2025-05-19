@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Help Center - Bahayahe</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="HelpCenter.css" />
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+<!--Main Navbar(Home, Booking, etc)-->
+  <div class="top-nav">
+    <a href="homepage.html" class="logo">Baha<span>yahe</span></a>
+    <nav class="navbar">
+      <a href="homepage.html">Home</a>
+      <a href="Listing.html">Listing</a>
+      <a href="HelpCenter.html">Help</a>
+      <a href="Contact.html">Contact</a>
+    </nav>
+
+    <!--Controls-->
+    <div class="icons">
+    <button class="gradient-btn" onclick="window.location.href='login.html';">Login</button>
+    
+    <!--User Icon Dropdown Informations-->
+    <div class="user-info">
+      <i class="fas fa-user user-icon" onclick="window.location.href='Account_Settings.html';"></i>
+      <div class="user-menu">
+          <a href="Account_Settings.html">Account</a>
+          <a href="NewList.html" class="active-link">Add New Listing</a>
+          <a href="notifications.html">Notifications</a>
+          <a href="Mess.html">Messenges</a>
+          <a href="Priv.html">Privacy</a>
+          <a href="Sett.html">Settings</a>
+          <a href="HomePage.html">Log out</a>
+        </div>
+      </div>
+  </div>
+</div>
+
+  <div class="bottom-nav">
+    <nav class="sub-navbar">
+      <div class="dropdown">
+        <a href="#town">Popular Town</a>
+        <div class="dropdown-content image-grid">
+          <a href="Balanga_Listing.html" class="grid-item">
+            <img src="Balanga.jpg" alt="Balanga">
+            <span class="highlight">Balanga City</span>
+          </a>
+          <a href="Mariveles_Listing.html" class="grid-item">
+            <img src="Veles.webp" alt="Mariveles">
+            <span class="highlight">Mariveles</span>
+          </a>
+          <a href="Bagac_Listing.html" class="grid-item">
+            <img src="bagac.webp" alt="Bagac">
+            <span class="highlight">Bagac</span>
+          </a>
+          <a href="Orion_Listing.html" class="grid-item">
+            <img src="orion.jpg" alt="Orion">
+            <span>Orion</span>
+          </a>
+          <a href="Orani_Listing.html" class="grid-item">
+            <img src="orani.webp" alt="Orani">
+            <span>Orani</span>
+          </a>
+          <a href="Morong_Listing.html" class="grid-item">
+            <img src="Morong.webp" alt="Morong">
+            <span>Morong</span>
+          </a>
+          <a href="Abucay_Listing.html" class="grid-item">
+            <img src="Abucay.jpg" alt="Abucay">
+            <span>Abucay</span>
+          </a>
+          <a href="Samal_Listing.html" class="grid-item">
+            <img src="Samal.jpg" alt="Samal">
+            <span>Samal</span>
+          </a>
+          <a href="Dinalupihan_Listing.html" class="grid-item">
+            <img src="Dinalupihan.webp" alt="Dinalupihan">
+            <span>Dinalupihan</span>
+          </a>
+          <a href="Hermosa_Listing.html" class="grid-item">
+            <img src="Hermosa.jpg" alt="Hermosa">
+            <span>Hermosa</span>
+          </a>
+          <a href="Limay_Listing.html" class="grid-item">
+            <img src="Limay.jpg" alt="Limay">
+            <span>Limay</span>
+          </a>
+          <a href="Pilar_Listing.html" class="grid-item">
+            <img src="Pilar.webp" alt="Pilar">
+            <span>Pilar</span>
+          </a>
+        </div>
+      </div>
+  
+      <div class="explore">
+        <a href="#destination">Explore Bahayahe</a>
+        <div class="landmark_explore">
+          <a href="#" class="highlight">House</a>
+          <a href="#" class="highlight">Room</a>
+          <a href="#" class="highlight">Apartment</a>
+          <a href="#">Office</a>
+          <a href="#">Dormitory</a>
+          <a href="#">Townhouse</a>
+          <a href="#">Penthouse</a>
+        </div>
+      </div>
+      <a href="#gift"><span class="highlight">Gift Cards</span></a>
+</nav>
+</div>
+</header>
+
+<!-- Help Content -->
+<main class="main-content">
+  <div class="card">
+    <h2>Help & Support</h2>
+    <h3>Need assistance?</h3>
+    <p>If you're having trouble using Bahayahe, you can browse our FAQ below or send us a message through the support form.</p>
+
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="faq">Frequently Asked Questions</label>
+        <select id="faq" name="faq" required>
+          <option value="">-- Select a question --</option>
+          <option value="listing">How do I post a new listing?</option>
+          <option value="edit">How can I edit my account details?</option>
+          <option value="safety">Is my information secure?</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Still need help? Send us a message:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Describe your issue here..." required></textarea>
+      </div>
+
+      <div class="button-row">
+        <button type="submit" class="btn primary">Submit</button>
+      </div>
+    </form>
+  </div>
+</main>
+
+</body>
+</html>

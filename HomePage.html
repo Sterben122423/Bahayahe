@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bahayahe</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0..1,0">
+  <link rel="stylesheet" href="HomePage.css">
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+<!--Main Navbar(Home, Booking, etc)-->
+  <div class="top-nav">
+    <a href="homepage.html" class="logo">Baha<span>yahe</span></a>
+    <nav class="navbar">
+      <a href="homepage.html">Home</a>
+      <a href="Listing.html">Listing</a>
+      <a href="HelpCenter.html">Help</a>
+      <a href="Contact.html">Contact</a>
+    </nav>
+
+    <!--Controls-->
+    <div class="icons">
+    <button class="gradient-btn" onclick="window.location.href='login.html';">Login</button>
+    
+    <!--User Icon Dropdown Informations-->
+    <div class="user-info">
+      <i class="fas fa-user user-icon" onclick="window.location.href='Account_Settings.html';"></i>
+      <div class="user-menu">
+          <a href="Account_Settings.html">Account</a>
+          <a href="NewList.html" class="active-link">Add New Listing</a>
+          <a href="Mess.html">Messages</a>
+          <a href="Priv.html">Privacy</a>
+          <a href="Sett.html">Settings</a>
+          <a href="HomePage.html">Log out</a>
+        </div>
+      </div>
+  </div>
+</div>
+
+  <div class="bottom-nav">
+    <nav class="sub-navbar">
+      <div class="dropdown">
+        <a href="#town">Popular Town</a>
+        <div class="dropdown-content image-grid">
+          <a href="Balanga_Listing.html" class="grid-item">
+            <img src="Balanga.jpg" alt="Balanga">
+            <span class="highlight">Balanga City</span>
+          </a>
+          <a href="Mariveles_Listing.html" class="grid-item">
+            <img src="Veles.webp" alt="Mariveles">
+            <span class="highlight">Mariveles</span>
+          </a>
+          <a href="Bagac_Listing.html" class="grid-item">
+            <img src="bagac.webp" alt="Bagac">
+            <span class="highlight">Bagac</span>
+          </a>
+          <a href="Orion_Listing.html" class="grid-item">
+            <img src="orion.jpg" alt="Orion">
+            <span>Orion</span>
+          </a>
+          <a href="Orani_Listing.html" class="grid-item">
+            <img src="orani.webp" alt="Orani">
+            <span>Orani</span>
+          </a>
+          <a href="Morong_Listing.html" class="grid-item">
+            <img src="Morong.webp" alt="Morong">
+            <span>Morong</span>
+          </a>
+          <a href="Abucay_Listing.html" class="grid-item">
+            <img src="Abucay.jpg" alt="Abucay">
+            <span>Abucay</span>
+          </a>
+          <a href="Samal_Listing.html" class="grid-item">
+            <img src="Samal.jpg" alt="Samal">
+            <span>Samal</span>
+          </a>
+          <a href="Dinalupihan_Listing.html" class="grid-item">
+            <img src="Dinalupihan.webp" alt="Dinalupihan">
+            <span>Dinalupihan</span>
+          </a>
+          <a href="Hermosa_Listing.html" class="grid-item">
+            <img src="Hermosa.jpg" alt="Hermosa">
+            <span>Hermosa</span>
+          </a>
+          <a href="Limay_Listing.html" class="grid-item">
+            <img src="Limay.jpg" alt="Limay">
+            <span>Limay</span>
+          </a>
+          <a href="Pilar_Listing.html" class="grid-item">
+            <img src="Pilar.webp" alt="Pilar">
+            <span>Pilar</span>
+          </a>
+        </div>
+      </div>
+  
+      <div class="explore">
+        <a href="#destination">Explore Bahayahe</a>
+        <div class="landmark_explore">
+          <a href="HouseL.html" class="highlight">House</a>
+          <a href="RoomL.html" class="highlight">Room</a>
+          <a href="ApartmentL.html" class="highlight">Apartment</a>
+          <a href="OfficeL.html">Office</a>
+          <a href="DormitoryL.html">Dormitory</a>
+          <a href="VillaL.html">Villa</a>
+        </div>
+      </div>
+      <a href="#gift"><span class="highlight">Gift Cards</span></a>
+</nav>
+</div>
+</header>
+
+<!--HERO SECTION-->
+<section class="hero_section">
+  <div class="hero_container">
+    <div class="hero_text_container">
+            <h3 class="hero_text">Bahayahe</h3>
+              <p class="hero_desc">Let's turn every Bahay into safe Byahe, together!</p>
+</div>
+<div class="search_form_container">
+  <form action="#" class="section_form">
+    <fieldset class="search_input_container">
+      <label for="keyword">Keywords</label>
+      <input type="text" class="search_input" placeholder="Keywords" id="keyword">
+    </fieldset>
+    <fieldset class="search_input_container">
+      <label for="propertytype">Property Type</label>
+      <select name="propertytype" class="search_input" id="propertytype">
+        <option value="#">Property Type</option>
+              <option value="house">House</option>
+              <option value="room">Room</option>
+              <option value="apartment">Apartment</option>
+              <option value="offices">Office</option>
+              <option value="condomium">Condomium</option>
+              <option value="domitory">Dormitory</option>
+              <option value="villa">Villa</option>
+              <option value="townhouse">Townhouse</option>
+              <option value="Penthouse">Penthouse</option>
+      </select>
+    </fieldset>
+    <fieldset class="search_input_container">
+      <label for="keyword">Location</label>
+      <input type="text" class="search_input" placeholder="Location" id="keyword">
+    </fieldset>
+     <fieldset class="search_input_container">
+      <label for="keyword"></label>
+      <button class="search_form_btn">Find My Home</button>
+    </fieldset>
+  </form>
+</div>
+</div>
+</section>
+
+<!--BANNER DEALS-->
+<section class="banners">
+  <div class="more">
+    <h2>Offers For you</h2>
+    <p>Unlock Incredible Deals and Start Your Home Journey with Bahayahe!</p>
+  </div>
+  <div class="sales">
+    <div class="banner-img">
+    <img src="banner2.jpeg" alt="num1" onclick="window.location.href='login.html';">
+    <img src="banner1.jpeg" alt="num2" onclick="window.location.href='login.html';">
+    <img src="banner3.jpeg" alt="num3" onclick="window.location.href='login.html';">
+  </div>
+    </div>
+
+<div class="more">
+    <h2>Why Choose Bahayahe?</h2>
+    <p>Unlock Incredible Deals and Start Your Home Journey with Bahayahe!</p>
+  </div>
+<div class="why-choose-container">
+    <div class="why-choose-grid">
+        <div class="why-choose-item">
+            <div class="icon">
+                <i class="fas fa-thumbs-up"></i>
+            </div>
+            <div class="text">
+                <h3>Trusted Service</h3>
+                <p>We provide reliable and trustworthy services to all our clients.</p>
+            </div>
+        </div>
+
+        <div class="why-choose-item">
+            <div class="icon">
+                <i class="fas fa-clock"></i>
+            </div>
+            <div class="text">
+                <h3>24/7 Availability</h3>
+                <p>Our services are available round the clock to ensure your comfort.</p>
+            </div>
+        </div>
+
+        <div class="why-choose-item">
+            <div class="icon">
+                <i class="fas fa-star"></i>
+            </div>
+            <div class="text">
+                <h3>Quality Assurance</h3>
+                <p>Experience top-tier quality with our dedicated services.</p>
+            </div>
+        </div>
+
+        <div class="why-choose-item">
+            <div class="icon">
+                <i class="fas fa-bolt"></i>
+            </div>
+            <div class="text">
+                <h3>Fast Process</h3>
+                <p>Get your services done quickly and efficiently with Bahayahe.</p>
+            </div>
+        </div>
+
+        <div class="why-choose-item">
+            <div class="icon">
+                <i class="fas fa-users"></i>
+            </div>
+            <div class="text">
+                <h3>Community Focused</h3>
+                <p>We prioritize our community and strive to meet their needs.</p>
+            </div>
+        </div>
+    </div>
+</div>
+  </section>
+
+
+  <!--PROPERTIES-->
+<section id="properties">
+  <div class="more">
+    <h2>Best on Bahayahe</h2>
+    <p>Ready for the ride? Let Bahayahe guide you home!</p>
+  </div>
+  <div class="property-list">
+    <!-- Property Card 1 -->
+    <div class="property-card">
+      <div class="image-tag">
+      <span class="tag">New</span>
+      <img src="Abucay1.jpg" alt="Property 1">
+    </div>
+      <div class="property-card-body">
+        <h3>$450,000</h3>
+        <p class="owner">COVA Home Realty</p>
+        <p class="address"> 1901 Thornridge Cir. Shiloh, Hawaii 81063</p>
+       <div class="property-card-footer">
+            <span><i class="fas fa-bed"></i>3 Bed</span>
+            <span><i class="fas fa-bath"></i>2 Bath</span>
+            <span><i class="fas fa-ruler-combined"></i>1430 sqft</span>
+          </div>
+    </div>
+    </div>
+
+    <!-- Property Card 2 -->
+    <div class="property-card">
+      <div class="image-tag">
+      <span class="tag">New</span>
+      <img src="Bagac1.jpg" alt="Property 1">
+    </div>
+      <div class="property-card-body">
+        <h3>$450,000</h3>
+        <p class="owner">COVA Home Realty</p>
+        <p class="address"> 1901 Thornridge Cir. Shiloh, Hawaii 81063</p>
+        <div class="property-card-footer">
+            <span><i class="fas fa-bed"></i>3 Bed</span>
+            <span><i class="fas fa-bath"></i>2 Bath</span>
+            <span><i class="fas fa-ruler-combined"></i>1430 sqft</span>
+          </div>
+    </div>
+    </div>
+
+    <!-- Property Card 3 -->
+    <div class="property-card">
+      <div class="image-tag">
+      <span class="tag">New</span>
+      <img src="Balanga1.webp" alt="Property 1">
+    </div>
+      <div class="property-card-body">
+        <h3>$450,000</h3>
+        <p class="owner">COVA Home Realty</p>
+        <p class="address"> 1901 Thornridge Cir. Shiloh, Hawaii 81063</p>
+        <div class="property-card-footer">
+            <span><i class="fas fa-bed"></i>3 Bed</span>
+            <span><i class="fas fa-bath"></i>2 Bath</span>
+            <span><i class="fas fa-ruler-combined"></i>1430 sqft</span>
+          </div>
+    </div>
+    </div>
+
+    <!-- Property Card 4 -->
+    <div class="property-card">
+      <div class="image-tag">
+      <span class="tag">New</span>
+      <img src="Dinalupihan1.jpg" alt="Property 1">
+    </div>
+      <div class="property-card-body">
+        <h3>$450,000</h3>
+        <p class="owner">COVA Home Realty</p>
+        <p class="address"> 1901 Thornridge Cir. Shiloh, Hawaii 81063</p>
+        <div class="property-card-footer">
+            <span><i class="fas fa-bed"></i>3 Bed</span>
+            <span><i class="fas fa-bath"></i>2 Bath</span>
+            <span><i class="fas fa-ruler-combined"></i>1430 sqft</span>
+          </div>
+    </div>
+    </div>
+    <div class="seemore">
+      <div class="see-more" onclick="window.location.href='Listing.html';">See More</div>
+    </div>
+  </div>
+
+  <div class="more">
+    <h2>Inspiration for Your Next Itinerary</h2>
+    <p>Unlock Incredible Deals and Start Your Home Journey with Bahayahe!</p>
+</div>
+   <div class="sales">
+    <div class="banner-img">
+    <img src="bagac.webp" alt="num1" onclick="window.location.href='login.html';">
+    <img src="Balanga.jpg" alt="num2" onclick="window.location.href='login.html';">
+    <img src="LasCasasFilipinasdeAcuzar.avif" alt="num3" onclick="window.location.href='login.html';">
+  </div>
+</div>
+</section>
+
+  <!--EXPLORE MORE-->
+  <section class="explore-more">
+  <h2>Explore More</h2>
+
+  <h3>Top Destinations to Stay</h3>
+  <div class="destination-list">
+    <div class="place-box" onclick="window.location.href='Balanga_Listing.html';">Balanga</div>
+    <div class="place-box">Mariveles</div>
+    <div class="place-box">Bagac</div>
+    <div class="place-box">Orion</div>
+    <div class="place-box">Orani</div>
+  </div>
+
+  <h3>Accommodations</h3>
+  <div class="destination-list">
+    <div class="place-box">Housing</div>
+    <div class="place-box">Suites & Rooms</div>
+    <div class="place-box">Budget Bunk</div>
+    <div class="place-box">Student Accomodation</div>
+    <div class="place-box">Rent</div>
+    <div class="place-box">Dormitories</div>
+    <div class="place-box">Motels</div>
+    <div class="place-box">Hotel Lodging</div>
+    <div class="place-box">Hotel Lodging</div>
+  </div>
+</section>
+
+<!--contact-->
+<section class="contact" id="contact">
+  <h1 class="heading"><span>contact</span> us</h1>
+  <div class="box-container">
+    <div class="box">
+      <h3>quick links</h3>
+      <a href="HomePage.html">home</a>
+      <a href="Listing.html">listing</a>
+      <a href="Help.html">help</a>
+      <a href="contact.html">contact</a>
+    </div>
+    <div class="box">
+      <h3>extra links</h3>
+      <a href="Account_Settings.html">my account</a>
+      <a href="Mess.html">my messages</a>
+      <a href="Sett.html">settings</a>
+      <a href="notification.html">my notification</a>
+    </div>
+    <div class="box">
+      <h3>location</h3>
+      <a href="#">Bataan</a>
+    </div>
+    <div class="box">
+      <h3>contact info</h3>
+      <a href="#">0967 298 6612</a>
+      <a href="#">bahayahe@gmail.com</a>
+      <a href="#">Balanga City, Bataan</a>
+    </div>
+  </div>
+  <div class="credit">created by <span>bahayahe</span> |all rights reserved</div>
+</section>
+              
+</body>
+</html>

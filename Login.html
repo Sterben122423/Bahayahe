@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="Login.css">
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+<!--Main Navbar(Home, Booking, etc)-->
+  <div class="top-nav">
+    <a href="homepage.html" class="logo">Baha<span>yahe</span></a>
+    <nav class="navbar">
+      <a href="homepage.html">Home</a>
+      <a href="Listing.html">Listing</a>
+      <a href="#help">Help</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <!--Controls-->
+    <div class="icons">
+    <button class="gradient-btn" onclick="window.location.href='Account_Settings.html';">Login</button>
+  </div>
+</div>
+</header>
+
+<!--Sign up-->
+<div class="container">
+  <div class="login_form register">
+    <form action="">
+      <h1>Registration</h1>
+      <div class="input-box">
+        <input type="text" placeholder="Username" required>
+        <i class="bx bxs-user"></i>
+      </div>
+      <div class="input-box">
+        <input type="email" placeholder="Email" required>
+        <i class="bx bxs-envelope"></i>
+      </div>
+      <div class="input-box">
+        <input type="password" placeholder="Password" required>
+        <i class="bx bxs-lock-alt"></i>
+      </div>
+      <button type="submit" class="btn" onclick="window.location.href='Account_Settings.html';">Register</button>
+      <p>or register with other accounts</p>
+      <div class="social-icons">
+        <a href=""><i class="bx bxl-google"></i></a>
+        <a href=""><i class="bx bxl-facebook"></i></a>
+        <a href=""><i class="bx bxl-github"></i></a>
+        <a href=""><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </form>
+</div>
+
+<div class="toggle-bar">
+  <div class="toggle-panel toggle-left">
+    <h1>Hello, Welcome!</h1>
+    <p>Already have an account?</p>
+    <button class="btn register-btn" onclick="window.location.href='Account_Settings.html';">Login</button>
+  </div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,527 @@
+ :root {
+  --orange: #E09132;
+  --green: #424530;
+  --beige: #FFEFCD;
+  --brown: #A58E74;
+  --white: #fff;
+  /*SECOND PALETTE*/
+  --ivory: #FFF9E2;
+  --greeny: #CDD4B1;
+  --lightgreen: #EBECCC;
+  --peach: #FEECD0;
+  --clay: #DCA278;
+  /*TAG*/
+  --popular: #BFBFDB;
+  --sale: #E0D6D6;
+  --mint: #C2D9D1;
+  --new: #0D1445;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+  font-size: 60%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  min-height: 100vh;
+}
+ body {
+  background: var(--ivory);
+  color: var(--orange);
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: var(--greeny);
+  flex-direction: column;
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+/* Top Nav */
+.top-nav {
+  width: 100%;
+  padding: 1rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Bottom Nav */
+.bottom-nav {
+  width: 100%;
+  padding: 1rem 9%;
+  background-color: var(--white);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Logo */
+.logo {
+  font-size: 3rem;
+  color: var(--green);
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.logo span {
+  color: var(--orange);
+}
+
+/* Navbar */
+.navbar a,
+.sub-navbar a {
+  font-size: 1.6rem;
+  color: black;
+  transition: 0.3s ease-in-out;
+  margin-left: 4rem;
+  border-bottom: 3px solid transparent;
+}
+.navbar a:hover,
+.sub-navbar a:hover {
+  color: var(--orange);
+  border-bottom: 3px solid var(--orange);
+}
+.sub-navbar a span {
+    color: var(--orange);
+}
+.navbar {
+  display: flex;
+  align-items: center;
+}
+.sub-navbar {
+  display: flex;
+  gap: 2rem;
+}
+/* Icons and Button */
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.gradient-btn {
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  background: var(--orange);
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  color: white;
+  border: none;
+  white-space: nowrap;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.gradient-btn:hover {
+  transform: scale(1.05);
+}
+/* User Dropdown */
+.user-info {
+  position: relative;
+  display: inline-block;
+}
+.user-icon {
+  font-size: 2.5rem;
+  color: #333;
+  padding: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  border-radius: 50%;
+}
+.user-icon:hover {
+  color: var(--orange);
+  background-color: rgba(224, 145, 50, 0.1);
+}
+.user-menu {
+  display: none;
+  position: absolute;
+  top: 4.5rem;
+  right: 0;
+  background-color: var(--white);
+  min-width: 200px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  border-radius: 0.5rem;
+  z-index: 999;
+}
+.user-menu a {
+  display: block;
+  padding: 1rem 1.5rem;
+  font-size: 1.4rem;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+.user-menu a:hover {
+  background-color: rgba(224, 145, 50, 0.1);
+  color: var(--orange);
+}
+.user-info:hover .user-menu {
+  display: block;
+}
+
+/*LEAD HEADER*/
+.lead {
+  background: var(--green);
+  width: 100%;
+  height: 25vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  text-align: center; bottom: 3rem;
+  flex-direction: column;
+  padding: 14px;
+}
+.lead .page h1{
+  font-size: 4rem;
+  color: var(--white);
+  font-weight: bolder;
+}
+.lead .page p{
+  font-size: 3rem;
+  color: var(--white);
+  padding: 1rem;
+  font-weight: bolder;
+}
+.lead .page span{
+  color: var(--orange);
+}
+.flowers .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center; /* Ensures alignment */
+}
+/*CONTACT PAGE*/
+#contant-details, #form-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 30px 9%;
+  margin: 20px auto;
+  margin: 20px;
+  border-radius: 10px;
+  color: var(--green);
+}
+#contant-details .detailed {
+  width: 40%;
+}
+#contant-details .detailed span, 
+#form-details form span{
+  font-size: 12px;
+}
+#contant-details .detailed h2{
+  font-size: 26px;
+  line-height: 35px;
+  padding: 20px 0;
+}
+#contant-details .detailed h3 {
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+#contant-details .detailed li{
+  list-style: none;
+  display: flex;
+  padding: 10px 0;
+}
+#contant-details .detailed li i{
+  font-size: 14px;
+  padding-right: 20px;
+}
+#contant-details .detailed li p{
+  margin: 0;
+  font-size: 14px;
+}
+#contant-details .map{
+  width: 55%;
+  height: 400%;
+}
+#form-details{
+  display: flex;
+  margin: 200px;
+  padding: 80px;
+  border: 1px solid var(--brown);
+  margin-top: 10px;
+}
+#form-details form {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#form-details form input,
+#form-details form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  outline: none;
+  margin-bottom: 20px;
+  border: 1px solid var(--greeny);
+}
+#form-details form h2{
+  margin-top: 2rem;
+  font-size: 26px;
+  padding-bottom: 15px;
+}
+#form-details .normal {
+  padding: 10px 20px;
+  background: var(--white);
+  color: var(--green);
+  border: 1px solid var(--clay);
+  cursor: pointer;
+  border-radius: 10px;
+  gap: 80rem;
+  box-shadow: 0 2px 8px solid rgba(0, 0, 0, 0.05);
+}
+#form-details .normal:hover {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+/*CONTACT*/
+.contact {
+    padding: 50px 30px;
+    background-color: var(--white);
+    border-top: 1px solid #ddd;
+}
+
+.contact .heading {
+    text-align: center;
+    font-size: 2.5em;
+    color: var(--orange);
+    margin-bottom: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.contact .heading span {
+    color: var(--green);  /* Accent Color */
+}
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.box {
+    flex: 1 1 200px;
+    background-color: var(--ivory);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.box h3 {
+    font-size: 2em;
+    color: var(--orange);
+    margin-bottom: 15px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--orange);
+    display: inline-block;
+}
+
+.box a {
+    display: block;
+    color: var(--green);
+    font-size: 1.2em;
+    margin-bottom: 8px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.box a:hover {
+    color: var(--orange);
+}
+
+.credit {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 0.95em;
+    color: #666;
+}
+
+.credit span {
+    color: var(--orange);
+    font-weight: 600;
+}
+
+/* --- Tablet (481px to 768px) --- */
+@media (max-width: 768px) and (min-width: 481px) {
+  /* Header: stack vertically */
+  .header {
+    flex-direction: column;
+    padding: 15px 10%;
+  }
+
+  /* Top Nav and Bottom Nav padding adjustment */
+  .top-nav,
+  .bottom-nav {
+    padding: 1rem 5%;
+  }
+
+  /* Logo smaller */
+  .logo {
+    font-size: 2.5rem;
+  }
+
+  /* Navbar links smaller and margin reduced */
+  .navbar a,
+  .sub-navbar a {
+    font-size: 1.4rem;
+    margin-left: 2rem;
+  }
+
+  /* User icon smaller */
+  .user-icon {
+    font-size: 2rem;
+    padding: 0.75rem;
+  }
+
+  /* Contact Details - stack vertically and full width */
+  #contant-details,
+  #form-details {
+    flex-direction: column;
+    padding: 20px 5%;
+  }
+
+  #contant-details .detailed,
+  #form-details form {
+    width: 100%;
+  }
+
+  #contant-details .map {
+    width: 100%;
+    height: 300px;
+  }
+
+  /* Form Details margin and padding reduced */
+  #form-details {
+    margin: 20px 5%;
+    padding: 30px 20px;
+  }
+}
+
+/* --- Mobile (up to 480px) --- */
+@media (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+
+  /* Header stack */
+  .header {
+    flex-direction: column;
+    padding: 10px 5%;
+  }
+
+  /* Top Nav and Bottom Nav smaller padding */
+  .top-nav,
+  .bottom-nav {
+    padding: 1rem 3%;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  /* Logo smaller */
+  .logo {
+    font-size: 2rem;
+  }
+
+  /* Navbar and Sub-navbar vertical & centered */
+  .navbar,
+  .sub-navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  /* Navbar links smaller, no left margin */
+  .navbar a,
+  .sub-navbar a {
+    font-size: 1.2rem;
+    margin-left: 0;
+  }
+
+  /* User icon smaller */
+  .user-icon {
+    font-size: 1.8rem;
+    padding: 0.5rem;
+  }
+
+  /* Contact details stack vertically */
+  #contant-details,
+  #form-details {
+    flex-direction: column;
+    padding: 15px 5%;
+    gap: 20px;
+  }
+
+  #contant-details .detailed,
+  #form-details form {
+    width: 100%;
+  }
+
+  /* Map smaller height */
+  #contant-details .map {
+    width: 100%;
+    height: 200px;
+  }
+
+  /* Form details padding and margin smaller */
+  #form-details {
+    margin: 10px 5%;
+    padding: 20px 15px;
+  }
+
+  /* Form inputs full width */
+  #form-details form input,
+  #form-details form textarea {
+    font-size: 1.2rem;
+  }
+
+  /* Buttons full width */
+  #form-details .normal {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 1.3rem;
+  }
+
+  /* Boxes stack vertically on mobile */
+  .box-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .box {
+    width: 100%;
+    max-width: 350px;
+  }
+}

@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Listing - Bahayahe</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="Listing.css">
+</head>
+<body>
+
+<!-- Header Section -->
+<section class="header">
+<!--Main Navbar(Home, Booking, etc)-->
+  <div class="top-nav">
+    <a href="homepage.html" class="logo">Baha<span>yahe</span></a>
+     
+    <nav class="navbar">
+      <a href="homepage.html">Home</a>
+      <a href="#listing">Listing</a>
+      <a href="HelpCenter.html">Help</a>
+      <a href="Contact.html">Contact</a>
+    </nav>
+
+    <!--Controls-->
+    <div class="icons">
+    <button class="gradient-btn" onclick="window.location.href='login.html';">Login</button>
+    
+    <!--User Icon Dropdown Informations-->
+    <div class="user-info">
+      <i class="fas fa-user user-icon" onclick="window.location.href='Account_Settings.html';"></i>
+      <div class="user-menu">
+          <a href="Account_Settings.html">Account</a>
+          <a href="notifications.html">Notifications</a>
+          <a href="Mess.html">Messenges</a>
+          <a href="Priv.html">Privacy</a>
+          <a href="Sett.html">Settings</a>
+          <a href="HomePage.html">Log out</a>
+        </div>
+      </div>
+  </div>
+</div>
+</section>
+
+<!--headline-
+<section class="lead">
+  <div class="page">
+    <h1>Find Your Dream Home</h1>
+    <p>Let's turn every<span> Bahay</span> into safe <span>Byahe</span>, together.</p>
+  </div>
+</section>-->
+    <!--PROPERTIES-->
+<section id="properties">
+  <div class="featured_properties_container">
+      <div class="title_container">
+        <h5 class="subtitle">Featured Properties</h5>
+        <h2 class="title">Featured Properties just for you!</h2>
+      </div>
+      <div class="content_container">
+        <div class="featured_properties_menu_container">
+          <ul class="featured_properties_menu_list">
+            <li><button onclick="window.location.href='Listing.html';">View all</button></li>
+            <li><button onclick="window.location.href='HouseL.html';">House</button></li>
+            <li><button onclick="window.location.href='RoomL.html';">Room</button></li>
+            <li><button class="active" onclick="window.location.href='ApartmentL.html';">Apartment</button></li>
+            <li><button onclick="window.location.href='OfficeL.html';">Office</button></li>
+            <li><button onclick="window.location.href='CondomiumL.html';">Condomium</button></li>
+            <li><button onclick="window.location.href='DormitoryL.html';">Dormitory</button></li>
+            <li><button onclick="window.location.href='VillaL.html';">Villa</button></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  <div class="property-list">
+    <!-- Property Card 4 -->
+    <div class="property-card" onclick="window.location.href='BLN_L7.html';">
+      <div class="image-tag">
+      <span class="tag">New</span>
+      <img src="room10.jpg" alt="Property 1">
+    </div>
+      <div class="property-card-body">
+        <h3>₱4,500,000</h3>
+        <p class="owner">Clarisse Mendoza</p>
+        <p class="address">89, Rizal Avenue, Barangay Doña Francisca, Balanga, Bataan, 2100</p>
+        <div class="property-card-footer">
+            <span><i class="fas fa-bed"></i>3 Bed</span>
+            <span><i class="fas fa-bath"></i>2 Bath</span>
+            <span><i class="fas fa-ruler-combined"></i>1430 sqft</span>
+          </div>
+    </div>
+    </div>
+
+    <!-- Property Card 7 -->
+   <div class="property-card" onclick="window.location.href='BLN_L4.html';">
+      <div class="image-tag">
+      <span class="tag">New</span>
+      <img src="room9.jpg" alt="Property 1">
+    </div>
+      <div class="property-card-body">
+        <h3>₱2,950,000</h3>
+        <p class="owner">Roberto Cruz</p>
+        <p class="address"> 173, Mabini Street, Barangay Cataning, Balanga, Bataan, 2100</p>
+       <div class="property-card-footer">
+            <span><i class="fas fa-bed"></i>3 Bed</span>
+            <span><i class="fas fa-bath"></i>2 Bath</span>
+            <span><i class="fas fa-ruler-combined"></i>1430 sqft</span>
+          </div>
+    </div>
+    </div>
+
+    <!-- Property Card 8 -->
+   <div class="property-card" onclick="window.location.href='BLN_L2.html';">
+      <div class="image-tag">
+      <span class="tag">New</span>
+      <img src="room8.jpg" alt="Property 1">
+    </div>
+      <div class="property-card-body">
+        <h3>₱4,100,000</h3>
+        <p class="owner">Janice Gomez</p>
+        <p class="address"> 98, San Roque Street, Barangay Tanato, Balanga, Bataan, 2100</p>
+       <div class="property-card-footer">
+            <span><i class="fas fa-bed"></i>3 Bed</span>
+            <span><i class="fas fa-bath"></i>2 Bath</span>
+            <span><i class="fas fa-ruler-combined"></i>1430 sqft</span>
+          </div>
+    </div>
+  </div>
+
+    <!-- Property Card 3 -->
+    <div class="property-card" onclick="window.location.href='BLN_L1.html';">
+      <div class="image-tag">
+      <span class="tag">New</span>
+      <img src="EnriquezLodge.jpg" alt="Property 1">
+    </div>
+      <div class="property-card-body">
+        <h3>₱5,000</h3>
+        <p class="owner">Juleone Pineda</p>
+        <p class="address">90, San Juan Street, Barangay Kaparangan, Orani, Bataan, 2112</p>
+        <div class="property-card-footer">
+            <span><i class="fas fa-bed"></i>3 Bed</span>
+            <span><i class="fas fa-bath"></i>2 Bath</span>
+            <span><i class="fas fa-ruler-combined"></i>1430 sqft</span>
+          </div>
+    </div>
+    </div>
+
+    <!-- Property Card 4 -->
+    <div class="property-card" onclick="window.location.href='BLN_L4.html';">
+      <div class="image-tag">
+      <span class="tag">New</span>
+      <img src="kitchen.jpg" alt="Property 1">
+    </div>
+      <div class="property-card-body">
+        <h3>₱7,000</h3>
+        <p class="owner">Juleone Pineda</p>
+        <p class="address">67, Quezon Street, Barangay Silahis, Orani, Bataan, 2112</p>
+        <div class="property-card-footer">
+            <span><i class="fas fa-bed"></i>3 Bed</span>
+            <span><i class="fas fa-bath"></i>2 Bath</span>
+            <span><i class="fas fa-ruler-combined"></i>1430 sqft</span>
+          </div>
+    </div>
+    </div>
+
+    <!-- Property Card 5 -->
+   <div class="property-card" onclick="window.location.href='BLN_L7.html';">
+      <div class="image-tag">
+      <span class="tag">New</span>
+      <img src="kitchen4.jpg" alt="Property 1">
+    </div>
+      <div class="property-card-body">
+        <h3>₱1,000</h3>
+        <p class="owner">Juleone Pineda</p>
+        <p class="address">34, Lopez Jaena Street, Barangay Pantalan Bago, Orani, Bataan, 2112</p>
+       <div class="property-card-footer">
+            <span><i class="fas fa-bed"></i>3 Bed</span>
+            <span><i class="fas fa-bath"></i>2 Bath</span>
+            <span><i class="fas fa-ruler-combined"></i>1430 sqft</span>
+          </div>
+    </div>
+    </div>
+
+    <div class="property-card" onclick="window.location.href='BLN_L6.html';">
+      <div class="image-tag">
+      <span class="tag">New</span>
+      <img src="Kitchen.jpg" alt="Property 1">
+    </div>
+      <div class="property-card-body">
+        <h3>₱1,700</h3>
+        <p class="owner">Justine Peralta</p>
+        <p class="address">12, Rizal Street, Barangay Balagtas, Orion, Bataan, 2112</p>
+       <div class="property-card-footer">
+            <span><i class="fas fa-bed"></i>3 Bed</span>
+            <span><i class="fas fa-bath"></i>2 Bath</span>
+            <span><i class="fas fa-ruler-combined"></i>1430 sqft</span>
+          </div>
+    </div>
+    </div>
+
+    <!-- Property Card 2 -->
+    <div class="property-card" onclick="window.location.href='BLN_L5.html';">
+      <div class="image-tag">
+      <span class="tag">New</span>
+      <img src="kitchen5.jpg" alt="Property 1">
+    </div>
+      <div class="property-card-body">
+        <h3>₱5,000</h3>
+        <p class="owner">Justine Peralta</p>
+        <p class="address">45, Mabini Street, Barangay Wawa, Orion, Bataan, 2112</p>
+        <div class="property-card-footer">
+            <span><i class="fas fa-bed"></i>3 Bed</span>
+            <span><i class="fas fa-bath"></i>2 Bath</span>
+            <span><i class="fas fa-ruler-combined"></i>1430 sqft</span>
+          </div>
+    </div>
+    </div>
+
+    <!-- Property Card 3 -->
+    <div class="property-card" onclick="window.location.href='BLN_L4.html';">
+      <div class="image-tag">
+      <span class="tag">New</span>
+      <img src="room12.jpg" alt="Property 1">
+    </div>
+      <div class="property-card-body">
+        <h3>₱4,000</h3>
+        <p class="owner">Justine Peralta</p>
+        <p class="address">78, Bonifacio Street, Barangay Sta. Elena, Orion, Bataan, 2112</p>
+        <div class="property-card-footer">
+            <span><i class="fas fa-bed"></i>3 Bed</span>
+            <span><i class="fas fa-bath"></i>2 Bath</span>
+            <span><i class="fas fa-ruler-combined"></i>1430 sqft</span>
+          </div>
+    </div>
+    </div>
+
+    <!-- Property Card 4 -->
+    <div class="property-card" onclick="window.location.href='BLN_L3.html';">
+      <div class="image-tag">
+      <span class="tag">New</span>
+      <img src="Dinalupihan4.jpg" alt="Property 1">
+    </div>
+      <div class="property-card-body">
+        <h3>₱2,900,000</h3>
+        <p class="owner">COVA Home Realty</p>
+        <p class="address"> 310, Lopez Jaena Street, Barangay Sta. Isabel, Dinalupihan, Bataan, 2110</p>
+        <div class="property-card-footer">
+            <span><i class="fas fa-bed"></i>3 Bed</span>
+            <span><i class="fas fa-bath"></i>2 Bath</span>
+            <span><i class="fas fa-ruler-combined"></i>1430 sqft</span>
+          </div>
+    </div>
+    </div>
+
+    <!-- Property Card 5 -->
+   <div class="property-card" onclick="window.location.href='BLN_L2.html';">
+      <div class="image-tag">
+      <span class="tag">New</span>
+      <img src="room2.jpg" alt="Property 1">
+    </div>
+      <div class="property-card-body">
+        <h3>₱3,000</h3>
+        <p class="owner">COVA Home Realty</p>
+        <p class="address">98, Paterno Street, Barangay New San Jose, Dinalupihan, Bataan, 2110</p>
+       <div class="property-card-footer">
+            <span><i class="fas fa-bed"></i>3 Bed</span>
+            <span><i class="fas fa-bath"></i>2 Bath</span>
+            <span><i class="fas fa-ruler-combined"></i>1430 sqft</span>
+          </div>
+    </div>
+    </div>
+
+    <!-- Property Card 5 -->
+   <div class="property-card" onclick="window.location.href='BLN_L1.html';">
+      <div class="image-tag">
+      <span class="tag">New</span>
+      <img src="room.jpg" alt="Property 1">
+    </div>
+      <div class="property-card-body">
+        <h3>₱3,400</h3>
+        <p class="owner">Rosewood Cottage</p>
+        <p class="address">150, Aguinaldo Street, Barangay Laon, Abucay, Bataan, 2114</p>
+       <div class="property-card-footer">
+            <span><i class="fas fa-bed"></i>2 Bed</span>
+            <span><i class="fas fa-bath"></i>1 Bath</span>
+            <span><i class="fas fa-ruler-combined"></i>430 sqft</span>
+          </div>
+    </div>
+    </div>
+    <div class="property-card" onclick="window.location.href='BLN_L7.html';">
+      <div class="image-tag">
+      <span class="tag">New</span>
+      <img src="room7.jpg" alt="Property 1">
+    </div>
+      <div class="property-card-body">
+        <h3>₱5,000</h3>
+        <p class="owner">Le Dean Mores</p>
+        <p class="address">90, Del Rosario Street, Barangay Biaan, Mariveles, Bataan, 2106</p>
+       <div class="property-card-footer">
+            <span><i class="fas fa-bed"></i>3 Bed</span>
+            <span><i class="fas fa-bath"></i>2 Bath</span>
+            <span><i class="fas fa-ruler-combined"></i>1430 sqft</span>
+          </div>
+    </div>
+    </div>
+
+    <!-- Property Card 2 -->
+    <div class="property-card" onclick="window.location.href='BLN_L6.html';">
+      <div class="image-tag">
+      <span class="tag">New</span>
+      <img src="room5.jpg" alt="Property 1">
+    </div>
+      <div class="property-card-body">
+        <h3>₱2,000</h3>
+        <p class="owner">Le Dean Mores</p>
+        <p class="address">24, San Juan Street, Barangay Ipag, Mariveles, Bataan, 2106</p>
+        <div class="property-card-footer">
+            <span><i class="fas fa-bed"></i>3 Bed</span>
+            <span><i class="fas fa-bath"></i>2 Bath</span>
+            <span><i class="fas fa-ruler-combined"></i>1430 sqft</span>
+          </div>
+    </div>
+    </div>
+
+    <!-- Property Card 3 -->
+    <div class="property-card" onclick="window.location.href='BLN_L5.html';">
+      <div class="image-tag">
+      <span class="tag">New</span>
+      <img src="room4.jpg" alt="Property 1">
+    </div>
+      <div class="property-card-body">
+        <h3>₱2,500</h3>
+        <p class="owner">Le Dean Mores</p>
+        <p class="address"> 67, Paterno Street, Barangay Alas-asin, Mariveles, Bataan, 2106</p>
+        <div class="property-card-footer">
+            <span><i class="fas fa-bed"></i>3 Bed</span>
+            <span><i class="fas fa-bath"></i>2 Bath</span>
+            <span><i class="fas fa-ruler-combined"></i>1430 sqft</span>
+          </div>
+    </div>
+    </div>
+
+    <!-- Property Card 4 -->
+    <div class="property-card" onclick="window.location.href='BLN_L4.html';">
+      <div class="image-tag">
+      <span class="tag">New</span>
+      <img src="room6.jpg" alt="Property 1">
+    </div>
+      <div class="property-card-body">
+        <h3>₱6,000</h3>
+        <p class="owner">Le Dean Mores</p>
+        <p class="address">24, San Juan Street, Barangay Ipag, Mariveles, Bataan, 2106</p>
+        <div class="property-card-footer">
+            <span><i class="fas fa-bed"></i>3 Bed</span>
+            <span><i class="fas fa-bath"></i>2 Bath</span>
+            <span><i class="fas fa-ruler-combined"></i>1430 sqft</span>
+          </div>
+    </div>
+    </div>
+     <div class="property-card" onclick="window.location.href='BLN_L3.html';">
+      <div class="image-tag">
+      <span class="tag">New</span>
+      <img src="room3.jpg" alt="Property 1">
+    </div>
+      <div class="property-card-body">
+        <h3>₱2,500</h3>
+        <p class="owner">Jed Quintos</p>
+        <p class="address">78, Bonifacio Street, Barangay Sta. Elena, Orion, Bataan, 2112</p>
+       <div class="property-card-footer">
+            <span><i class="fas fa-bed"></i>3 Bed</span>
+            <span><i class="fas fa-bath"></i>2 Bath</span>
+            <span><i class="fas fa-ruler-combined"></i>1430 sqft</span>
+          </div>
+    </div>
+    </div>
+
+    <!-- Property Card 2 -->
+    <div class="property-card" onclick="window.location.href='BLN_L2.html';">
+      <div class="image-tag">
+      <span class="tag">New</span>
+      <img src="pantry.jpg" alt="Property 1">
+    </div>
+      <div class="property-card-body">
+        <h3>₱4,000</h3>
+        <p class="owner">Jed Quintos</p>
+        <p class="address">56, Del Pilar Street, Barangay Bilolo, Orion, Bataan, 2112</p>
+        <div class="property-card-footer">
+            <span><i class="fas fa-bed"></i>3 Bed</span>
+            <span><i class="fas fa-bath"></i>2 Bath</span>
+            <span><i class="fas fa-ruler-combined"></i>1430 sqft</span>
+          </div>
+    </div>
+    </div>
+
+    <!-- Property Card 3 -->
+    <div class="property-card" onclick="window.location.href='BLN_L1.html';">
+      <div class="image-tag">
+      <span class="tag">New</span>
+      <img src="room2.jpg" alt="Property 1">
+    </div>
+      <div class="property-card-body">
+        <h3>₱3,500</h3>
+        <p class="owner">Jed Quintos</p>
+        <p class="address">23, Paterno Street, Barangay Daan Pare, Orion, Bataan, 2112</p>
+        <div class="property-card-footer">
+            <span><i class="fas fa-bed"></i>3 Bed</span>
+            <span><i class="fas fa-bath"></i>2 Bath</span>
+            <span><i class="fas fa-ruler-combined"></i>1430 sqft</span>
+          </div>
+    </div>
+    </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+  <section class="explore-more">
+  <h2>Explore More</h2>
+
+  <h3>Top Destinations to Stay</h3>
+  <div class="destination-list">
+    <div class="place-box" onclick="window.location.href='Balanga_Listing.html';">Balanga</div>
+    <div class="place-box">Mariveles</div>
+    <div class="place-box">Bagac</div>
+    <div class="place-box">Orion</div>
+    <div class="place-box">Orani</div>
+  </div>
+
+  <h3>Accommodations</h3>
+  <div class="destination-list">
+    <div class="place-box">Housing</div>
+    <div class="place-box">Suites & Rooms</div>
+    <div class="place-box">Budget Bunk</div>
+    <div class="place-box">Student Accomodation</div>
+    <div class="place-box">Rent</div>
+    <div class="place-box">Dormitories</div>
+    <div class="place-box">Motels</div>
+    <div class="place-box">Hotel Lodging</div>
+    <div class="place-box">Hotel Lodging</div>
+  </div>
+</section>
+
+</section>
+</body>
+</html>

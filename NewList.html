@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bahayahe - Add New Listing</title>
+  <link rel="stylesheet" href="NewList.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <a href="homepage.html" class="logo"><h2>Baha<span>yahe</span></h2></a>
+      <a href="Account_Settings.html">Account</a>
+      <a href="NewList.html" class="active-link">Add New Listing</a>
+      <a href="Mess.html">Messages</a>
+      <a href="Priv.html">Privacy</a>
+      <a href="Sett.html">Settings</a>
+      <a href="HomePage.html">Log out</a>
+    </div>
+
+    <div class="main-content">
+      <h2>Add New Listing</h2>
+      <div class="card">
+        <form action="#" method="post" enctype="multipart/form-data">
+
+          <div class="form-group">
+            <label for="title">Title ng Bahay *</label>
+            <textarea id="title" name="title" rows="2" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="mainImage">Main Image *</label>
+            <input type="file" id="mainImage" name="mainImage" accept="image/*" required />
+          </div>
+
+          <div class="form-group">
+            <label for="additionalImage">Additional Image (Optional)</label>
+            <input type="file" id="additionalImage" name="additionalImage" accept="image/*" />
+          </div>
+
+          <div class="form-group">
+            <label for="address">Address *</label>
+            <textarea id="address" name="address" rows="2" required></textarea>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="price">Price (₱) *</label>
+              <input type="number" id="price" name="price" required />
+            </div>
+            <div class="form-group">
+              <label for="location">Location *</label>
+              <input type="text" id="location" name="location" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="sqMeter">Square Meter *</label>
+              <input type="number" id="sqMeter" name="sqMeter" required />
+            </div>
+            <div class="form-group">
+              <label for="rooms">Room Count *</label>
+              <input type="number" id="rooms" name="rooms" required />
+            </div>
+            <div class="form-group">
+              <label for="bathrooms">Bathroom Count *</label>
+              <input type="number" id="bathrooms" name="bathrooms" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="description">Description *</label>
+            <textarea id="description" name="description" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="btn primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

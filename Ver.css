@@ -1,0 +1,266 @@
+:root {
+  --orange: #E09132;
+  --green: #424530;
+  --beige: #FFEFCD;
+  --brown: #A58E74;
+  --white: #fff;
+  /*SECOND PALETTE*/
+  --ivory: #FFF9E2;
+  --greeny: #CDD4B1;
+  --lightgreen: #EBECCC;
+  --peach: #FEECD0;
+  --clay: #DCA278;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  body {
+    background: var(--greeny);
+    color: var(--orange);
+  }
+  
+  .container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .sidebar {
+    width: 220px;
+    background-color: var(--ivory);
+    padding: 20px;
+    border-right: 1px solid var(--white);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar .logo {
+    margin-bottom: 20px;
+    color: var(--orange);
+    text-decoration: none;
+    font-size: 22px;
+  }
+
+  .sidebar .logo h2 {
+    color: #424530; 
+  }
+
+  .sidebar .logo h2 span {
+    color: var(--orange); 
+  }
+  
+  .sidebar a {
+    color: #333;
+    text-decoration: none;
+    margin: 10px 0;
+  }
+  .sidebar a:hover {
+    color: var(--orange);
+    border-bottom: 3px solid var(--orange);
+  }
+  
+  .sidebar .active-link {
+    font-weight: bold;
+    color: var(--orange);
+  }
+
+  .sidebar .active-link:hover{
+    color: var(--orange);
+    border-bottom: 3px solid var(--orange);
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 30px;
+  }
+  .main-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--orange);
+  }
+  
+  .card {
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 8px;
+    color: #000;
+    margin-top: 1rem;
+  }
+  
+  .tabs {
+    list-style: none;
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--orange);
+    padding-bottom: 8px;
+  }
+  
+  .tab {
+    width: 160px; /* Fixed width for uniform size */
+    text-align: center;
+    border: 1px solid transparent;
+    border-bottom: none;
+    background: var(--orange);
+    margin-right: 10px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+  
+  .tab a {
+    display: block;
+    padding: 12px 0;
+    color: #333;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    background: #f2f2f2;
+    border-radius: 6px 6px 0 0;
+  }
+  .tab a:hover {
+    color: var(--orange);
+    border-bottom: 3px solid var(--orange);
+    transform: scale(1.05);
+  }
+  
+  .tab.active a {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-bottom: 1px solid white;
+    color: var(--orange);
+  }
+
+form {
+  max-width: 500px;
+  margin-top: 20px;
+  color: #000;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 6px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="file"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn {
+  padding: 10px 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.btn.primary:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 0;
+    border-right: none;
+    border-bottom: 1px solid var(--white);
+  }
+
+  .sidebar .logo {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .sidebar a {
+    margin: 5px 15px;
+  }
+
+  .main-content {
+    padding: 20px 15px;
+  }
+
+  .main-content h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .tabs {
+    flex-wrap: wrap;
+  }
+
+  .tab {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+
+  .tab a {
+    padding: 10px 0;
+  }
+
+  form {
+    max-width: 100%;
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="file"] {
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar a {
+    margin: 8px 0;
+  }
+
+  .main-content h2 {
+    font-size: 1.4rem;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .tab a {
+    font-size: 0.9rem;
+  }
+}

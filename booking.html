@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bahayahe - Booking</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="HomePage.css">
+  <link rel="stylesheet" href="BookingForm.css">
+</head>
+<body>
+
+<!-- Header Start -->
+<header>
+  <div class="top-nav">
+    <a href="homepage.html" class="logo">Baha<span>yahe</span></a>
+    <nav class="navbar">
+      <a href="homepage.html">Home</a>
+      <a href="Listing.html">Listing</a>
+      <a href="HelpCenter.html">Help</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="icons">
+      <button class="gradient-btn" onclick="window.location.href='login.html';">Login</button>
+      <div class="user-info">
+        <i class="fas fa-user user-icon" onclick="window.location.href='Account_Settings.html';"></i>
+        <div class="user-menu">
+          <a href="Account_Settings.html">Account</a>
+          <a href="NewList.html">Add New Listing</a>
+          <a href="Mess.html">Messages</a>
+          <a href="Priv.html">Privacy</a>
+          <a href="Sett.html">Settings</a>
+          <a href="HomePage.html">Log out</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-nav">
+    <nav class="sub-navbar">
+      <div class="dropdown">
+        <a href="#town">Popular Town</a>
+        <div class="dropdown-content image-grid">
+          <a href="Balanga_Listing.html" class="grid-item">
+            <img src="Balanga.jpg" alt="Balanga">
+            <span class="highlight">Balanga City</span>
+          </a>
+          <a href="Mariveles_Listing.html" class="grid-item">
+            <img src="Veles.webp" alt="Mariveles">
+            <span class="highlight">Mariveles</span>
+          </a>
+          <a href="Bagac_Listing.html" class="grid-item">
+            <img src="bagac.webp" alt="Bagac">
+            <span class="highlight">Bagac</span>
+          </a>
+          <a href="Orion_Listing.html" class="grid-item">
+            <img src="orion.jpg" alt="Orion">
+            <span>Orion</span>
+          </a>
+          <a href="Orani_Listing.html" class="grid-item">
+            <img src="orani.webp" alt="Orani">
+            <span>Orani</span>
+          </a>
+          <a href="Morong_Listing.html" class="grid-item">
+            <img src="Morong.webp" alt="Morong">
+            <span>Morong</span>
+          </a>
+          <a href="Abucay_Listing.html" class="grid-item">
+            <img src="Abucay.jpg" alt="Abucay">
+            <span>Abucay</span>
+          </a>
+          <a href="Samal_Listing.html" class="grid-item">
+            <img src="Samal.jpg" alt="Samal">
+            <span>Samal</span>
+          </a>
+          <a href="Dinalupihan_Listing.html" class="grid-item">
+            <img src="Dinalupihan.webp" alt="Dinalupihan">
+            <span>Dinalupihan</span>
+          </a>
+          <a href="Hermosa_Listing.html" class="grid-item">
+            <img src="Hermosa.jpg" alt="Hermosa">
+            <span>Hermosa</span>
+          </a>
+          <a href="Limay_Listing.html" class="grid-item">
+            <img src="Limay.jpg" alt="Limay">
+            <span>Limay</span>
+          </a>
+          <a href="Pilar_Listing.html" class="grid-item">
+            <img src="Pilar.webp" alt="Pilar">
+            <span>Pilar</span>
+          </a>
+        </div>
+      </div>
+  
+      <div class="dropdown">
+        <a href="#destination">Popular Destination</a>
+        <div class="dropdown-content image-grid">
+          <a href="#" class="grid-item">
+            <img src="LasCasasFilipinasdeAcuzar.avif" alt="Las Casas">
+            <span class="highlight">Las Casas Filipinas de Acuzar</span>
+          </a>
+          <a href="#" class="grid-item">
+            <img src="Mount Samat.jpg" alt="Mount Samat">
+            <span class="highlight">Mount Samat National Shrine</span>
+          </a>
+          <a href="#" class="grid-item">
+            <img src="BataanDeathMarchMarker.jpg" alt="Bataan Death March Marker">
+            <span class="highlight">Bataan Death March Marker</span>
+          </a>
+          <a href="#" class="grid-item">
+            <img src="Corregidor Island.jpg" alt="Corregidor Island">
+            <span>Corregidor Island</span>
+          </a>
+          <a href="#" class="grid-item">
+            <img src="Morong Beach.jpg" alt="Morong Beach">
+            <span>Morong Beach</span>
+          </a>
+          <a href="#" class="grid-item">
+            <img src="Mt. Natib.jpg" alt="Mt. Natib">
+            <span>Mt. Natib</span>
+          </a>
+          <a href="#" class="grid-item">
+            <img src="Pawikan Conservation Center.JPG" alt="Pawikan Conservation Center">
+            <span>Pawikan Conservation Center</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="explore">
+        <a href="#destination">Explore Bahayahe</a>
+        <div class="landmark_explore">
+          <a href="#" class="highlight">Accomodation</a>
+          <a href="#" class="highlight">Housing</a>
+          <a href="#" class="highlight">Suites & Rooms</a>
+          <a href="#">Student Accomodation</a>
+          <a href="#">Hotels</a>
+          <a href="#">Lodging</a>
+        </div>
+      </div>
+
+      <a href="booking.html"><span class="highlight">Booking</span></a>
+
+      <a href="#gift"><span class="highlight">Gift Cards</span></a>
+    </nav>
+  </div>
+</header>
+<!-- Header End -->
+
+<!-- Booking Form Section -->
+<section class="booking-section">
+  <h2>Book Your Stay</h2>
+  <form class="booking-form" action="#" method="post">
+    <div>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required />
+    </div>
+
+    <div>
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required />
+    </div>
+
+    <div>
+      <label for="checkin">Check-in Date</label>
+      <input type="date" id="checkin" name="checkin" required />
+    </div>
+
+    <div>
+      <label for="checkout">Check-out Date</label>
+      <input type="date" id="checkout" name="checkout" required />
+    </div>
+
+    <div>
+      <label for="guests">Number of Guests</label>
+      <select id="guests" name="guests" required>
+        <option value="1">1 Guest</option>
+        <option value="2">2 Guests</option>
+        <option value="3">3 Guests</option>
+        <option value="4+">4+ Guests</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="listing">Select Listing</label>
+      <select id="listing" name="listing" required>
+        <option value="" disabled selected>Select a place</option>
+        <option value="balanga">Balanga City</option>
+        <option value="mariveles">Mariveles</option>
+        <option value="bagac">Bagac</option>
+        <!-- Add more listings as needed -->
+      </select>
+    </div>
+
+    <div>
+      <button type="submit">Confirm Booking</button>
+    </div>
+  </form>
+</section>
+
+</body>
+</html>
